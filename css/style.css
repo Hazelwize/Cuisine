@@ -1,0 +1,429 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html{
+	font-size: 62.5%;
+}
+.wrapper{
+	max-width: 1440px;
+	margin: 0 auto;
+	
+}
+
+body {
+	font: 1.6rem 'Roboto', sans-serif;
+}
+header{
+	padding-top: 25px;
+}
+input{
+	padding: 10px;
+	border-radius: 5px 0 0 5px;
+	border: none;
+	width: 400px;
+	box-shadow: inset 2px 2px 2px rgba(0,0,0,.2);
+	
+}
+h1{
+	width: 70%;
+	white-space: pre-line;
+	text-shadow: 3px 3px 3px white;
+}
+main{
+	background:url(../assets/mainimg2.jpg) 0 85% no-repeat;
+}
+
+.videoBox  iframe{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	right: 0%;
+}
+
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.smallPanel{
+	height: 650px;
+	padding: 0 80px;
+}
+.social *{	
+	padding: 20px 0;
+	vertical-align: middle;
+	font-weight: bold;
+	text-shadow: 2px 2px 2px white;
+}
+
+.social span{
+	padding-right: 20px;
+}
+.grid-1{
+	width: 50%;
+	padding-top: 20px;
+}
+.grid-2{
+	background: url(../assets/section_1.jpg) 0 0 no-repeat;
+	background-size: 100% auto;
+}
+.box-2-1{
+	width:50%;
+	float: right;
+	margin-top:80px;	
+}
+.grid-3, 
+.grid-4, 
+.grid-5{
+	padding:60px 80px;
+	
+	background: #E7EDF0;
+
+}
+.grid-3 .preHeading,h3,ul{
+	display: block;
+	text-align: center;
+	width:100%;
+	padding-top: 20px;
+}
+.grid-3 ul{
+	width: 44%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	
+}
+
+.grid-3 ul li{
+	display: inline-block;
+	float: left;
+	border-bottom: 2px solid black;
+}
+.grid-3 a{
+	padding: 30px 30px;
+}
+
+.grid-4{
+	background: linear-gradient(#E7EDF0,#bbbbbb);
+	text-align: center;
+	white-space: pre-line;
+	height: auto;
+}
+.phone{
+	color: #FE9F3B;
+	font:bold 3rem "Merriweather", sans-serif;
+}
+.storeHours{
+	width: 50%;
+	float: left;	
+	padding: 20px 0;
+	margin-bottom: 20px;
+
+}
+.hoursBox{
+	width: 100%;
+	clear:both;
+}
+.videoBox{
+	clear: both;
+	margin: 0 auto;
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.25%;
+	position: relative;
+}
+.grid-5{
+	text-align: center;
+	height: 600px;
+	white-space: pre-line;
+	
+}	
+
+.review{
+	width: 140px;
+	height: 140px;
+	background: url(../assets/review.jpg);
+	border-radius: 50%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+/* ==============================================
+PHOTO GRID 
+============================================== */
+.imgBlock{
+	height: auto;
+}
+
+.galleryImg{
+	display: block;
+	margin: 25px 2%;
+	width: 21%;
+	height: 300px;
+	float: left;
+
+}
+.galleryImg img{
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+}
+
+/* ===================================================
+CART/SEARCH/PHONE ICONS 
+=================================================== */
+.material-icons {
+	font-size: 2.6rem;
+	color: black;
+	font-family: 'Material Icons';
+
+}
+i.phone {
+	font-size: 4rem;
+	color: #FE9F3B;
+	
+}
+
+/* =======================================================
+NAVIGATION
+=======================================================  */
+nav{
+	height: 60px;
+}
+nav ul{
+	float: left;
+	width: 46%;
+	margin-left: 40%;
+}
+.navList{	
+	display: inline;
+	padding: 20px;
+	text-shadow: 2px 2px 2px rgba(255,255,255,.8);
+}
+.navList:hover{
+	border-bottom: 2px solid black;
+}
+.simpleSmall{
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+	line-height: 60px;
+}
+.navIcons{
+	width: 11%;
+	margin: 0;
+	margin-top: 15px;	
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.bigFancy{
+	font: 6rem 'Merriweather', sans-serif;
+	margin: 10px 0;
+}
+.btn{
+	font-weight: bold;
+	display: inline-block;
+	padding: 10px;
+	background: #FF8800;
+	color: white;
+	border-radius: 0 5px 5px 0;
+	text-decoration: none;
+	position: relative;
+	right: 5px;
+}
+.preHeading{
+	font-weight: bold;
+	color: #FF8800;
+}
+p{
+	line-height: 3rem;
+	margin-bottom: 18px;
+}
+.box-2-1 .btn{
+	border-radius: 5px;
+	padding-right: 10px;
+	background: linear-gradient(270deg, #FFAA4D 20% 15px, #FF8800 0% );
+}
+.hours{
+	font: bold 2rem 'Merriweather', sans-serif;
+}
+
+.reviewName{
+	font: bold 2.5rem 'Merriweather', sans-serif;
+	
+}
+.grid-5 p{
+	font-weight: 300;
+	font-style: italic;
+	color: rgba(0,0,0,.5);
+}
+
+/* ==============================
+ARROW IN BUTTON 
+============================== */
+.btn i{
+	color: white;
+	font-size: 1.4rem;
+	font-weight: 700;
+	padding-left: 20px;
+}
+
+/* ========================================
+STATE
+======================================== */
+
+.grid-3 li:hover{
+	border-bottom: 2px solid #FC9E36;
+}
+.grid-3 a:hover{
+	color: #FC9E36;
+}
+
+/* ==============================================
+MEDIA QUERIES
+============================================== */
+@media screen and (max-width: 1423px){
+	.grid-1,.box-2-1{
+		width: 100%;
+	}
+	.grid-2{
+		background: linear-gradient(rgba(255,255,255,.7) 100% , rgba(61, 61, 61,.2)), url(../assets/section_1.jpg);
+	}
+	.simpleText{
+		font-size: 2rem;
+	}
+	.grid-3 ul{
+		display: none;
+	}
+}
+@media screen and (max-width: 1000px){
+	.galleryImg{
+		width: 28%;
+	}
+	.navList{
+		display:none;
+	}
+}
+@media screen and (max-width: 650px){
+	.galleryImg{
+		width: 45%;
+	}
+
+
+	.grid-1, .grid-3, .grid-4{
+		height: auto;
+		
+	}
+	input{
+		width: 70%;
+		height: 40px;
+	}
+}
+
+@media screen and (max-width: 550px){
+	.galleryImg{
+		width: 100%;
+	}
+	.grid-1, .grid-2, .grid-3, .grid-4{
+		padding: 15px;
+		
+	}
+	header{
+		height: 20px;
+		margin: 0;
+	}
+	.smallPanel{
+		padding: 5px 5px;
+	}
+	h1{
+		font-size: 1.6rem;
+	}	
+	.grid-5{
+		margin-top: 200px;
+		padding: 10px
+	}
+	.grid-4{
+		height: 700px;
+	}
+
+}
+
+@media screen and (max-width: 400px){
+	.bigFancy{
+		font-size: 4.5rem;
+	}
+	.simpleText{
+		font-size: 1.8rem;
+	}
+}
