@@ -78,6 +78,7 @@ html{
 }
 
 body {
+	background: rgb(237,228,229);
 	font: 1.6rem 'Roboto', sans-serif;
 }
 header{
@@ -209,7 +210,7 @@ main{
 .review{
 	width: 140px;
 	height: 140px;
-	background: url(../assets/review.jpg);
+	background: url(../assets/reviewThumb.jpg);
 	border-radius: 50%;
 	margin: 0 auto;
 	margin-bottom: 20px;
