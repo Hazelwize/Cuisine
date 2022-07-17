@@ -18,7 +18,7 @@ I would like to go back and fix some of the spots that don't work together flawl
 I learned a lot about the way that elements work together to hold a webpage orientation together. I think that this was a good exercise for precisely that. In reality, nobody wants to use floats, but that is precisely why I did it. Most of the current websites have lost the knowledge of how everything actually clicks together. I aim to learn more deeply and understand the fundamentals that brought us to flexbox.
 
 ## Examples:
-Take a look at these couple examples that I have in my own portfolio:
+Take a look at these examples that I have in my own portfolio:
 
 **Murder Ink E-Sports Team:** https://github.com/Hazelwize/murderInk
 
